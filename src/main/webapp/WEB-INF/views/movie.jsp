@@ -41,7 +41,7 @@
                     <div class="form-group col-md-12">
                         <label class="col-md-2 control-lable" for="movieName">Movie Name</label>
                         <div class="col-md-7">
-                            <input type="text" ng-model="ctrl.movie.movieName" name="movieName" class=" form-control input-sm" placeholder="Enter Hall Name" required ng-minlength="3"/>
+                            <input type="text" ng-model="ctrl.movie.movieName" name="movieName" class=" form-control input-sm" placeholder="Enter Movie Name" required ng-minlength="3"/>
                             <div class="has-error" ng-show="myForm.$dirty">
                                 <span ng-show="myForm.movieName.$error.required">This is a required field</span>
                                 <span ng-show="myForm.movieName.$error.minlength">Minimum length required is 3</span>
@@ -54,7 +54,7 @@
                     <div class="form-group col-md-12">
                         <label class="col-md-2 control-lable" for="directors">Directors</label>
                         <div class="col-md-7">
-                            <input type="text" ng-model="ctrl.movie.directors" name="directors" class=" form-control input-sm" placeholder="Enter Hall Name" required ng-minlength="3"/>
+                            <input type="text" ng-model="ctrl.movie.directors" name="directors" class=" form-control input-sm" placeholder="Enter Director's Name" required ng-minlength="3"/>
                             <div class="has-error" ng-show="myForm.$dirty">
                                 <span ng-show="myForm.directors.$error.required">This is a required field</span>
                                 <span ng-show="myForm.directors.$error.minlength">Minimum length required is 3</span>
@@ -67,7 +67,7 @@
                     <div class="form-group col-md-12">
                         <label class="col-md-2 control-lable" for="movieTimeDuration">Time Duration</label>
                         <div class="col-md-7">
-                            <input type="text" ng-model="ctrl.movie.movieTimeDuration" name="movieTimeDuration" class=" form-control input-sm" placeholder="Enter Hall Name" required ng-minlength="3"/>
+                            <input type="text" ng-model="ctrl.movie.movieTimeDuration" name="movieTimeDuration" class=" form-control input-sm"  required ng-minlength="3"/>
                             <div class="has-error" ng-show="myForm.$dirty">
                                 <span ng-show="myForm.movieTimeDuration.$error.required">This is a required field</span>
                                 <span ng-show="myForm.movieTimeDuration.$error.minlength">Minimum length required is 3</span>
@@ -80,7 +80,7 @@
                     <div class="form-group col-md-12">
                         <label class="col-md-2 control-lable" for="movieType">Type</label>
                         <div class="col-md-7">
-                            <input type="text" ng-model="ctrl.movie.movieType" name="movieType" class=" form-control input-sm" placeholder="Enter Hall Name" required ng-minlength="3"/>
+                            <input type="text" ng-model="ctrl.movie.movieType" name="movieType" class=" form-control input-sm" placeholder="Enter Movie Type" required ng-minlength="3"/>
                             <div class="has-error" ng-show="myForm.$dirty">
                                 <span ng-show="myForm.movieType.$error.required">This is a required field</span>
                                 <span ng-show="myForm.movieType.$error.minlength">Minimum length required is 3</span>
@@ -91,9 +91,9 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <label class="col-md-2 control-lable" for="showTime">Shwo Time</label>
+                        <label class="col-md-2 control-lable" for="showTime">Show Time</label>
                         <div class="col-md-7">
-                            <input type="text" ng-model="ctrl.movie.showTime" name="showTime" class=" form-control input-sm" placeholder="Enter Hall Name" required ng-minlength="3"/>
+                            <input type="text" ng-model="ctrl.movie.showTime" name="showTime" class=" form-control input-sm" placeholder="Enter Show Time" required ng-minlength="3"/>
                             <div class="has-error" ng-show="myForm.$dirty">
                                 <span ng-show="myForm.showTime.$error.required">This is a required field</span>
                                 <span ng-show="myForm.showTime.$error.minlength">Minimum length required is 3</span>
@@ -107,7 +107,7 @@
                     <div class="form-group col-md-12">
                         <label class="col-md-2 control-lable" for="ticketPrice">Ticket Price</label>
                         <div class="col-md-7">
-                            <input type="text" ng-model="ctrl.movie.ticketPrice" name="ticketPrice" class=" form-control input-sm" placeholder="Enter Hall Name" required ng-minlength="3"/>
+                            <input type="text" ng-model="ctrl.movie.ticketPrice" name="ticketPrice" class=" form-control input-sm" placeholder="Enter Ticket Price" required ng-minlength="3"/>
                             <div class="has-error" ng-show="myForm.$dirty">
                                 <span ng-show="myForm.ticketPrice.$error.required">This is a required field</span>
                                 <span ng-show="myForm.ticketPrice.$error.minlength">Minimum length required is 3</span>
@@ -122,7 +122,7 @@
                     <div class="form-group col-md-12">
                         <label class="col-md-2 control-lable" for="writer">Writer</label>
                         <div class="col-md-7">
-                            <input type="text" ng-model="ctrl.movie.writer" name="writer" class=" form-control input-sm" placeholder="Enter Hall Location" required/>
+                            <input type="text" ng-model="ctrl.movie.writer" name="writer" class=" form-control input-sm" placeholder="Enter name of the writer" required/>
                             <div class="has-error" ng-show="myForm.$dirty">
                                 <span ng-show="myForm.writer.$error.required">This is a required field</span>
                                 <span ng-show="myForm.writer.$invalid">This field is invalid </span>
@@ -180,7 +180,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-<script src="<c:url value='/resources/js/test.js' />"></script>
+<script src="<c:url value='/resources/js/hall.js' />"></script>
 <script src="<c:url value='/resources/js/service/movieService.js' />"></script>
 <script src="<c:url value='/resources/js/controller/movieController.js' />"></script>
 </body>

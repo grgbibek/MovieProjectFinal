@@ -16,6 +16,15 @@ angular.module('myApp').controller('hallController', ['$scope', 'hallService', f
 
     fetchAllHall();
 
+    /*
+        This is also fine
+    function fetchAllHall(){
+        $http.get('http://localhost:8088/hall/' + 'getHallList')
+            .then(function(response){
+                self.hallList = response.data;
+            });
+    }*/
+
     function fetchAllHall(){
         hallService.fetchAllHall()
             .then(

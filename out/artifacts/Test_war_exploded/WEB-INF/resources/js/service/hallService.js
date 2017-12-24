@@ -31,12 +31,6 @@ angular.module('myApp').factory('hallService', ['$http', '$q', function($http, $
      return deferred.promise;
      }
 
-   /* function fetchAllHall(){
-        $http.get(REST_SERVICE_URI + "getHallList")
-            .then(function(response){
-                return response.data;
-            });
-    }*/
     function createHall(hall) {
         var deferred = $q.defer();
         $http.post(REST_SERVICE_URI + "add", hall)

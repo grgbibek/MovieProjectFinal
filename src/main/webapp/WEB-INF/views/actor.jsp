@@ -132,7 +132,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-<script src="<c:url value='/resources/js/test.js' />"></script>
+<script src="<c:url value='/resources/js/hall.js' />"></script>
 <script src="<c:url value='/resources/js/service/actorService.js' />"></script>
 <script src="<c:url value='/resources/js/controller/actorController.js' />"></script>
 </body>

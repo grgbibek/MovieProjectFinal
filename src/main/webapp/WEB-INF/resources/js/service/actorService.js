@@ -31,6 +31,8 @@ angular.module('myApp').factory('actorService', ['$http', '$q', function($http, 
         return deferred.promise;
     }
 
+
+
     function createActor(actor, d) {
         var deferred = $q.defer();
         $http.post(REST_SERVICE_URI + "add/" + d, actor)
