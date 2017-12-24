@@ -29,6 +29,7 @@
     <link href="<c:url value='/resources/css/app.css' />" rel="stylesheet" />
 </head>
 <body ng-app="myApp" class="ng-cloak">
+<%@include file="template/navbar.jsp"%>
 <div class="generic-container" ng-controller="actorController as ctrl">
     <div class="panel panel-default">
         <div class="panel-heading"><span class="lead">PLEASE ADD/UPDATE ACTOR </span></div>

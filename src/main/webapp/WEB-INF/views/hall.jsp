@@ -55,7 +55,7 @@
                     <div class="form-group col-md-12">
                         <label class="col-md-2 control-lable" for="numberOfScreen">Number Of Screen</label>
                         <div class="col-md-7">
-                            <input type="text" ng-model="ctrl.hall.numberOfScreen" class="form-control input-sm" placeholder="Enter Number Of Screens"/>
+                            <input type="number" ng-model="ctrl.hall.numberOfScreen" class="form-control input-sm" />
                         </div>
                     </div>
                 </div>
