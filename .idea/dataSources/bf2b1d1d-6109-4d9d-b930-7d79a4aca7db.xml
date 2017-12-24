@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="db_moviesproject@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="db_moviesproject">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="cdcol"/>
+    <schema id="4" parent="1" name="db_answer"/>
+    <schema id="5" parent="1" name="db_answer3"/>
+    <schema id="6" parent="1" name="db_ecommerce"/>
+    <schema id="7" parent="1" name="db_ecommerceclass"/>
+    <schema id="8" parent="1" name="db_myname"/>
+    <schema id="9" parent="1" name="db_myproject"/>
+    <schema id="10" parent="1" name="db_test"/>
+    <schema id="11" parent="1" name="db_wordpress"/>
+    <schema id="12" parent="1" name="information_schema"/>
+    <schema id="13" parent="1" name="mysql"/>
+    <schema id="14" parent="1" name="pdr"/>
+    <schema id="15" parent="1" name="performance_schema"/>
+    <schema id="16" parent="1" name="phpmyadmin"/>
+    <schema id="17" parent="1" name="samajikedb"/>
+    <schema id="18" parent="1" name="spring"/>
+    <schema id="19" parent="1" name="student"/>
+    <schema id="20" parent="1" name="test"/>
+    <schema id="21" parent="1" name="webauth"/>
+    <table id="22" parent="2" name="actor"/>
+    <table id="23" parent="2" name="authorities"/>
+    <table id="24" parent="2" name="hall"/>
+    <table id="25" parent="2" name="movie"/>
+    <table id="26" parent="2" name="users"/>
+    <column id="27" parent="22" name="Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="28" parent="22" name="Name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="29" parent="22" name="Role">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="22" name="age">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="22" name="sex">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="32" parent="22" name="movieId">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="33" parent="22" name="FK585A9F54C8B1514">
+      <ColNames>movieId</ColNames>
+    </index>
+    <key id="34" parent="22" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="35" parent="22" name="FK585A9F54C8B1514">
+      <ColNames>movieId</ColNames>
+      <RefSchemaName>db_moviesproject</RefSchemaName>
+      <RefTableName>movie</RefTableName>
+      <RefColNames>Id</RefColNames>
+    </foreign-key>
+    <column id="36" parent="23" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="23" name="authority">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="38" parent="23" name="username">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="39" parent="23" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="24" name="Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="24" name="hallName">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="42" parent="24" name="location">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="43" parent="24" name="numberOfScreen">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="44" parent="24" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="45" parent="25" name="Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="46" parent="25" name="directors">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="47" parent="25" name="movieName">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="48" parent="25" name="movieTimeDuration">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="49" parent="25" name="movieType">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="50" parent="25" name="showTime">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="51" parent="25" name="ticketPrice">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="52" parent="25" name="writer">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="53" parent="25" name="hallId">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="54" parent="25" name="FK6343F30C7973694">
+      <ColNames>hallId</ColNames>
+    </index>
+    <key id="55" parent="25" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="56" parent="25" name="FK6343F30C7973694">
+      <ColNames>hallId</ColNames>
+      <RefSchemaName>db_moviesproject</RefSchemaName>
+      <RefTableName>hall</RefTableName>
+      <RefColNames>Id</RefColNames>
+    </foreign-key>
+    <column id="57" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="58" parent="26" name="enabled">
+      <Position>2</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="26" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="60" parent="26" name="username">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="61" parent="26" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
